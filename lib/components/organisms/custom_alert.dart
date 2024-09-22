@@ -1,7 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:system_design_celestial_dance/utils/material_theme.dart';
-import 'package:system_design_celestial_dance/utils/platform_utils.dart';
-import 'package:system_design_celestial_dance/utils/spacing_theme.dart';
+part of 'index.dart';
 
 class CustomAlert extends StatefulWidget {
   const CustomAlert({

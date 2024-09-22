@@ -1,12 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:system_design_celestial_dance/models/toggle_value_model.dart';
-import 'package:system_design_celestial_dance/utils/action_icon_utils.dart';
-import 'package:system_design_celestial_dance/utils/material_theme.dart';
-import 'package:system_design_celestial_dance/utils/spacing_theme.dart';
+part of 'index.dart';
 
-class CustomInputWidget extends StatefulWidget {
-  const CustomInputWidget({
+class CustomInput extends StatefulWidget {
+  const CustomInput({
     required this.controller,
     required this.nameLabel,
     this.hintText,
@@ -80,10 +75,10 @@ class CustomInputWidget extends StatefulWidget {
   final bool enableInteractiveSelection;
   final Key? keyButtonEdit;
   @override
-  State<CustomInputWidget> createState() => CustomInputWidgetState();
+  State<CustomInput> createState() => CustomInputWidgetState();
 }
 
-class CustomInputWidgetState extends State<CustomInputWidget> {
+class CustomInputWidgetState extends State<CustomInput> {
   @visibleForTesting
   late FocusNode focusNode;
   @visibleForTesting
@@ -127,9 +122,9 @@ class CustomInputWidgetState extends State<CustomInputWidget> {
 
   Color _getColorFilled({required bool hasFocus}) {
     if (hasFocus) {
-      return MaterialTheme.lightScheme().outlineVariant;
+      return MaterialTheme.lightScheme().surfaceContainer;
     }
-    return widget.disabledFilledColor ?? MaterialTheme.lightScheme().outline;
+    return widget.disabledFilledColor ?? MaterialTheme.lightScheme().surfaceContainer;
   }
 
   Color _getColorText() {
