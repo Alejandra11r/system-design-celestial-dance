@@ -1,8 +1,8 @@
 name: system_design_celestial_dance
 description: "Sistema de diseño de Celestial dance"
 version: 0.0.1
-homepage:
-
+homepage: "https://github.com/Alejandra11r/system-design-celestial-dance"
+publish_to: https://github.com/Alejandra11r/system-design-celestial-dance
 
 environment:
   sdk: '>=3.4.4 <4.0.0'
